@@ -37,7 +37,6 @@ public class ProductosView extends javax.swing.JFrame {
         modelo.addColumn("Categoria");
         modelo.addColumn("Precio");
         tProductos.setModel(modelo);
-    
     }
        
     @SuppressWarnings("unchecked")
@@ -103,6 +102,7 @@ public class ProductosView extends javax.swing.JFrame {
         lblCategoria.setText("Categoria:");
 
         cboCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Comestible", "Perfumeria", "Limpieza", "Farmacia", "Ropa" }));
+        cboCategoria.setSelectedIndex(-1);
 
         btnAgregar.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
         btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/carrito.png"))); // NOI18N
