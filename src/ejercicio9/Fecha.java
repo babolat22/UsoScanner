@@ -9,6 +9,39 @@ public class Fecha {
     private int dia;  // encapsulamiento // oculto
     private int mes;
     private int anio;
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 89 * hash + this.dia;
+        hash = 89 * hash + this.mes;
+        hash = 89 * hash + this.anio;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Fecha other = (Fecha) obj;
+        if (this.dia != other.dia) {
+            return false;
+        }
+        if (this.mes != other.mes) {
+            return false;
+        }
+        if (this.anio != other.anio) {
+            return false;
+        }
+        return true;
+    }
     
     public Fecha(int d, int m, int anio) {
         dia = d;

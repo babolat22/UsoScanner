@@ -12,7 +12,8 @@ import java.util.Scanner;
 public class ejercicio09 {
 
     public static void main(String[] args) {
-       // Usando el Scanner
+       // Usando el Scanner 20255555555
+        System.out.println("Holiss");
        System.out.print("sout\n");
        Fecha f1 = new Fecha(2,3,2024);
        Scanner sc = new Scanner(System.in).useDelimiter("\n");//que corte con enter
@@ -46,5 +47,6 @@ public class ejercicio09 {
             System.out.println("Digito: " + dig);
         }
         System.out.println("cociente: " + num);
+        // fin del codigo
     } 
 }
